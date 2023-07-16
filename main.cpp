@@ -9,7 +9,6 @@ struct Student {
     string name;
     string fatherName;
     string motherName;
-    string className;
     string semester;
     string branch;
     string houseNo;
@@ -45,9 +44,6 @@ void addRecord(Student records[], int& count) {
 
     cout << "Enter Mother's Name: ";
     getline(cin, newRecord.motherName);
-
-    cout << "Enter Class: ";
-    getline(cin, newRecord.className);
 
     cout << "Enter Semester: ";
     getline(cin, newRecord.semester);
@@ -104,7 +100,6 @@ void searchByCity(const Student records[], int count, const string& city) {
             cout << "Name: " << records[i].name << endl;
             cout << "Father's Name: " << records[i].fatherName << endl;
             cout << "Mother's Name: " << records[i].motherName << endl;
-            cout << "Class: " << records[i].className << endl;
             cout << "Semester: " << records[i].semester << endl;
             cout << "Branch: " << records[i].branch << endl;
             cout << "Address: " << records[i].houseNo << ", "
